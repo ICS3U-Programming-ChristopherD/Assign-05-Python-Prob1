@@ -58,7 +58,9 @@ def main():
         elapsed_time_user = input("Enter the elapsed time (seconds): ")
 
         # Checking for errors in user's input
-        object_properties = exception_checker(velocity_init_user, velocity_final_user, elapsed_time_user)
+        object_properties = exception_checker(
+            velocity_init_user, velocity_final_user, elapsed_time_user
+        )
 
         # Prints appropriate error/special case message
         # using return values from the exception checker
@@ -103,7 +105,9 @@ def main():
 
         # Prints the average acceleration to the user then asks the user if they
         # would like to restart
-        print(f"The average acceleration of the object is equal to {average_acceleration} {units}/s^2\n")
+        print(
+            f"The average acceleration of the object is equal to {average_acceleration} {units}/s^2\n"
+        )
         restart = input("Enter 'q' to quit. Enter any other key to restart.\n>> ")
 
         # Restarts if the user enters a null value
